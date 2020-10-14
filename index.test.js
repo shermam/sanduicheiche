@@ -1,13 +1,17 @@
 describe("removeEcho", () => {
-  it("it removes the echoes from words", async () => {
+  it.each`
+    input              | output
+    ${'sanduicheiche'} | ${'sanduiche'}
+    ${'barrilarril'}   | ${'barril'}
+    ${'ratoato'}       | ${'rato'}
+    ${'sol'}           | ${'sol'}
+    ${'coliseueu'}     | ${'coliseu'}
+    ${'queijoijo'}     | ${'queijo'}
+    ${'astroastro'}    | ${'astro'}
+    ${'a'}             | ${'a'}
+  `("it returns '$output' for input: '$input' ", async ({input, output}) => {
     const removeEcho = require(".");
-    expect(removeEcho("sanduicheiche")).toEqual("sanduiche");
-    expect(removeEcho("barrilarril")).toEqual("barril");
-    expect(removeEcho("ratoato")).toEqual("rato");
-    expect(removeEcho("sol")).toEqual("sol");
-    expect(removeEcho("coliseueu")).toEqual("coliseu");
-    expect(removeEcho("queijoijo")).toEqual("queijo");
-    expect(removeEcho("astroastro")).toEqual("astro");
-    expect(removeEcho("a")).toEqual("a");
+
+    expect(removeEcho(input)).toEqual(output);
   });
 });

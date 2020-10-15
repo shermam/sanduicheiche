@@ -1,3 +1,5 @@
+![Node.js CI](https://github.com/shermam/sanduicheiche/workflows/Node.js%20CI/badge.svg?branch=main)
+
 # sanduicheiche
 
 This is a small code example that solves the problem in the table below.

@@ -1,1 +1,1 @@
-module.exports = (word) => word.replace(/(\w{2,})\1/, "$1");
+module.exports = (word) => word.replace(/(\w{2,})\1$/, "$1");

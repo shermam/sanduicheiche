@@ -14,3 +14,11 @@ The idea is to have this function that takes in values from the first column as 
 | astroastro    | astro     |
 | a             | a         |
 | bananaana     | banana    |
+
+
+# Running
+
+I assume `node` is already installed. And I am using `jest` for the tests here. So to run:
+1. `git clone` this repo
+1. run `yarn` to install `jest` dependencies (this assumes that you have `yarn` globally installed. `npm` should also work)
+1. run `yarn test` to run the tests. (again `npm` should probably work as well)

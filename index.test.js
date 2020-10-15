@@ -12,7 +12,7 @@ describe("removeEcho", () => {
     ${"astroastro"}    | ${"astro"}
     ${"a"}             | ${"a"}
     ${"bananaana"}     | ${"banana"}
-  `("it returns '$output' for input: '$input' ", ({ input, output }) => {
+  `("returns '$output' for input: '$input' ", ({ input, output }) => {
     expect(removeEcho(input)).toEqual(output);
   });
 });

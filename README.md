@@ -15,6 +15,13 @@ The idea is to have this function that takes in values from the first column as 
 | a             | a         |
 | bananaana     | banana    |
 
+# Solution
+
+This is the solution I came up with:
+
+```js
+const removeEcho = (word) => word.replace(/(\w{2,})\1$/, "$1");
+```
 
 # Running
 
